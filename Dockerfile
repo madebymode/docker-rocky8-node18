@@ -22,8 +22,7 @@ RUN dnf update -y \
     wget \
     gcc-c++ \
     make \
-    git \
-    ssh
+    git 
 
 RUN curl -sL https://rpm.nodesource.com/setup_18.x | bash -
 
