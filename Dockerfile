@@ -16,8 +16,8 @@ RUN dnf -y install epel-release
 RUN dnf -y install yum-utils mysql rsync wget git sudo which
 
 # Update and install latest packages and prerequisites
-RUN yum update -y \
-    && yum install -y --nogpgcheck --setopt=tsflags=nodocs \
+RUN dnf update -y \
+    && dnf install -y --nogpgcheck --setopt=tsflags=nodocs \
     curl \
     wget \
     gcc-c++ \
@@ -29,9 +29,9 @@ RUN curl -sL https://rpm.nodesource.com/setup_18.x | bash -
 
 RUN curl -sL https://dl.yarnpkg.com/rpm/yarn.repo | tee /etc/yum.repos.d/yarn.repo
 
-RUN yum install -y nodejs \
+RUN dnf install -y nodejs \
     yarn \
-    && yum clean all && yum history new
+    && dnf clean all && dnf history new
 
 RUN echo 'Creating notroot docker user and group from host' && \
     groupadd -g $HOST_USER_GID docker && \
