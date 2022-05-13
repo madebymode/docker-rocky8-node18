@@ -23,7 +23,8 @@ RUN dnf update -y \
     gcc-c++ \
     make \
     git \
-    bzip2
+    bzip2 \
+    GraphicsMagick
 
 RUN curl -sL https://rpm.nodesource.com/setup_18.x | bash -
 
