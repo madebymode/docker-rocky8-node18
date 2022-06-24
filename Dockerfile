@@ -24,7 +24,26 @@ RUN dnf update -y \
     make \
     git \
     bzip2 \
-    GraphicsMagick
+    GraphicsMagick \
+    alsa-lib  \
+    atk   \
+    cups-libs  \
+    gtk3  \
+    libXcomposite  \
+    libXcursor  \
+    libXdamage  \
+    libXext  \
+    libXi  \
+    libXrandr  \
+    libXScrnSaver  \
+    libXtst  \
+    pango  \
+    xorg-x11-fonts-100dpi  \
+    xorg-x11-fonts-75dpi  \
+    xorg-x11-fonts-cyrillic  \
+    xorg-x11-fonts-misc  \
+    xorg-x11-fonts-Type1  \
+    xorg-x11-utils
 
 RUN curl -sL https://rpm.nodesource.com/setup_18.x | bash -
 
