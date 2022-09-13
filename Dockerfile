@@ -24,7 +24,10 @@ RUN dnf update -y \
     make \
     git \
     bzip2 \
-    GraphicsMagick
+    GraphicsMagick \
+    libpng-devel \
+    zlib \ 
+    autoconf
 
 RUN curl -sL https://rpm.nodesource.com/setup_18.x | bash -
 
