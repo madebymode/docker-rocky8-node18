@@ -61,7 +61,7 @@ RUN dnf update -y \
     libappindicator1  \
     libnss3  \
     lsb-release  \
-    xdg-utils \
+    xdg-utils 
 
 
 
